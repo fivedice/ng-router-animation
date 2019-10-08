@@ -1,0 +1,11 @@
+<div class="app">
+	<div class="buttons">
+		<button routerLink="['/one']">One</button>
+		<button [routerLink]="['/two']">Two</button>
+		<button [routerLink]="['/three']">Three</button>
+	</div>
+
+	<div [@triggerName]="prepareRoute(outlet)">
+		<router-outlet #outlet="outlet"></router-outlet>
+	</div>
+</div>
